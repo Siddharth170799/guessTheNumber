@@ -1,38 +1,77 @@
-.App {
+/* Practice.css - Dark Theme */
+
+.practice-container {
+  min-height: 100vh;
+  background: linear-gradient(to right, #0f172a, #1e293b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: #f8fafc;
+}
+
+.practice-box {
+  background-color: #1f2937;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 400px;
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.practice-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #e2e8f0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.practice-input {
+  width: 80%;
+  padding: 0.6rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #4b5563;
+  background-color: #374151;
+  color: #f8fafc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.practice-button {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f8fafc;
+  background-color: #2563eb;
+  border: none;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.practice-button:hover {
+  background-color: #1d4ed8;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.reset-button {
+  background-color: #6b7280;
+}
+
+.reset-button:hover {
+  background-color: #4b5563;
+}
+
+.success-message {
+  color: #22c55e;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.failure-message {
+  color: #f87171;
+  font-weight: 500;
+  margin-bottom: 1rem;
 }
